@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".up1.Qualification"
+    android:background="@drawable/defaultbg15"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/miopwa" />
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="PRODUCT RECEPTION "
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/staffnameID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Welcome"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/staffnoID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Staff No"
+                android:textColor="#000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout33"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text=" LOGOUT " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/collNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:ems="7"
+                android:text="FLOT CODE"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/weightIDtext"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:ems="4"
+                android:text="WEIGHT"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/weightview"
+                android:layout_toLeftOf="@id/weightIDtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:ems="7"
+                android:text="WEIGHT Kg. : "
+                android:textStyle="bold" />
+            <Spinner
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/spinnerflot"
+                android:gravity="center"
+                android:layout_below="@+id/collNo"
+                android:background="@drawable/spinner_cars"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <LinearLayout
+                android:id="@+id/layoutsatu"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WEIGHT Kg. \nC1 EXCELLENT"/>
+                <EditText
+                    android:id="@+id/weightc1"
+                    android:inputType="numberDecimal"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shapekotak"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutdua"
+                android:layout_toEndOf="@+id/layoutsatu"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WEIGHT Kg. \nC2 NORMAL"/>
+                <EditText
+                    android:id="@+id/weightc2"
+                    android:inputType="numberDecimal"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shapekotak"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layouttiga"
+                android:layout_toEndOf="@+id/layoutdua"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WEIGHT Kg. \nR REJECTED"/>
+                <EditText
+                    android:id="@+id/weightc3"
+                    android:layout_marginTop="5dp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/shapekotak"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REJECT REASON"/>
+            <EditText
+                android:layout_below="@+id/reason"
+                android:id="@+id/rejectReasonID"
+                android:inputType="textMultiLine"
+                android:background="@drawable/shapekotak"
+                android:layout_width="match_parent"
+                android:gravity="left"
+                android:layout_height="100dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/buttonSubmitID"
+                android:text="SUBMIT"
+                android:ems="12"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>
+

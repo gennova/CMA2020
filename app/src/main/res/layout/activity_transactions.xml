@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/mioadmi" />
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="DATA COLLECTOR / PENGEPUL "
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="ALL TRANSACTION"
+                android:textColor="#000"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/tvname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Welcome"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvhobby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Collector No"
+                android:textColor="#000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout33"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/editbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT " />
+
+        <TextView
+            android:id="@+id/btnlogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" LOGOUT " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/farmerbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/buttonmenu"
+            android:text="BACK" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/deleteID"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" |DELETE "/>
+            <TextView
+                android:id="@+id/editID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="| EDIT "
+                android:textSize="15sp"
+                android:layout_toLeftOf="@id/deleteID"/>
+            <TextView
+                android:id="@+id/addID"
+                android:text="ADD "
+                android:textSize="15sp"
+                android:layout_toLeftOf="@+id/editID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/alltransID"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="| ALL TRANS"/>
+            <TextView
+                android:id="@+id/qrfarmerID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QR LOTCODE "
+                android:textSize="15sp"
+                android:layout_toLeftOf="@id/alltransID"/>
+        </RelativeLayout>
+        <ScrollView
+            android:fillViewport="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <ListView
+                android:id="@+id/listViewfarmer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
+
